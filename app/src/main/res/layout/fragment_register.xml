@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.LoginFragment"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_logo"> //mudar
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Criar Conta"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="25dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gabriel Lopes Sant'ana\n20232tiimi0195"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Digite seu E-mail"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <TextView
+                android:id="@+id/senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Senha"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/inputSenha"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Digite sua senha"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENVIAR"
+                android:textColor="@color/color_default"
+                android:backgroundTint="@null"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                tools:visibility="visible"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
