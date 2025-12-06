@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="android:windowBackground">@color/color_default</item>
     </style>
-    <style name="Base.Theme.Task" parent="Base.Theme.Task"/>
+    <style name="Theme.Task" parent="Base.Theme.Task"/>
 </resources>
