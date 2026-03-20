@@ -10,6 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:id="@+id/constraintLayout1">
 
         <com.google.android.material.tabs.TabLayout
@@ -22,8 +23,7 @@
             app:tabMode="scrollable"
             app:tabPaddingStart="24dp"
             app:tabPaddingEnd="24dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
+            app:tabSelectedTextAppearance="@style/CustomTabLayout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
