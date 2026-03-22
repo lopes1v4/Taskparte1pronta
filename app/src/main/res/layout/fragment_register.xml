@@ -5,16 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.auth.LoginFragment"
+    tools:context=".ui.auth.RegisterFragment"
     android:fillViewport="true">
 
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
         <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:navigationIcon="@drawable/arrow"
@@ -86,9 +88,10 @@
                 android:background="@drawable/bg_edit_text"/>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/bntRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ENVIAR"
+                android:text="REGISTRAR"
                 android:textColor="@color/white"
                 android:backgroundTint="@null"
                 android:layout_marginTop="16dp"
