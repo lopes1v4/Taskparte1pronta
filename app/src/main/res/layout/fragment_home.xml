@@ -29,7 +29,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:tabIndicatorColor="@color/white"
-            app:tabSelectedTextColor="@color/black"
+            app:tabSelectedTextColor="@color/white"
             app:tabTextColor="@color/white"/>
 
         <ImageButton

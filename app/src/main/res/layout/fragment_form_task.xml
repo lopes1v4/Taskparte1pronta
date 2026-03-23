@@ -58,7 +58,7 @@
                 android:id="@+id/txtViewStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Status"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +77,7 @@
                     android:layout_width="88dp"
                     android:layout_height="48dp"
                     android:id="@+id/rbTodo"
-                    android:text="Fazer"
+                    android:text="A Fazer"
                     android:checked="true"
                     android:theme="@style/MyRadioButton"
                     android:textColor="@color/white"/>
