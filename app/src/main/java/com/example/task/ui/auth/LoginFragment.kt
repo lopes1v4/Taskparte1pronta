@@ -38,7 +38,7 @@ class LoginFragment : Fragment() {
         }
 
         binding.bntRecover.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_recoverAccountFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_fragment_Recover)
         }
     }
 

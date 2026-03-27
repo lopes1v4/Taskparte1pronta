@@ -13,39 +13,9 @@
         app:popUpTo="@id/splashFragment"
         app:popUpToInclusive="true">
         <action
-            android:id="@+id/action_splashFragment_to_autentication"
-            app:destination="@id/autentication"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true">
-        </action>
+            android:id="@+id/action_splashFragment_to_authentication"
+            app:destination="@id/authentication" />
     </fragment>
-    <navigation android:id="@+id/autentication"
-        app:startDestination="@id/loginFragment">
-        <fragment
-            android:id="@+id/loginFragment"
-            android:name="com.example.task.ui.auth.LoginFragment"
-            android:label="fragment_login"
-            tools:layout="@layout/fragment_login">
-            <action
-                android:id="@+id/action_loginFragment_to_registerFragment"
-                app:destination="@id/registerFragment" />
-            <action
-                android:id="@+id/action_loginFragment_to_recoverAccountFragment"
-                app:destination="@id/recoverAccountFragment" />
-        </fragment>
-        <fragment
-            android:id="@+id/registerFragment"
-            android:name="com.example.task.ui.auth.RegisterFragment"
-            android:label="RegisterFragment" />
-        <fragment
-            android:id="@+id/recoverAccountFragment"
-            android:name="com.example.task.ui.auth.RecoverAccountFragment"
-            android:label="fragment_recover_account"
-            tools:layout="@layout/fragment_recover_account" />
-        <action
-            android:id="@+id/action_global_homeFragment"
-            app:destination="@id/homeFragment" />
-    </navigation>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.task.ui.HomeFragment"
@@ -60,4 +30,32 @@
         android:name="com.example.task.ui.FormTaskFragment"
         android:label="fragment_form_task"
         tools:layout="@layout/fragment_form_task" />
+    <navigation android:id="@+id/authentication"
+        app:startDestination="@id/loginFragment">
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.example.task.ui.auth.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_loginFragment_to_registerFragment"
+                app:destination="@id/registerFragment" />
+            <action
+                android:id="@+id/action_loginFragment_to_fragment_Recover"
+                app:destination="@id/fragment_Recover" />
+        </fragment>
+        <fragment
+            android:id="@+id/registerFragment"
+            android:name="com.example.task.ui.auth.RegisterFragment"
+            android:label="fragment_register"
+            tools:layout="@layout/fragment_register" />
+        <action
+            android:id="@+id/action_global_homeFragment"
+            app:destination="@id/homeFragment" />
+        <fragment
+            android:id="@+id/fragment_Recover"
+            android:name="com.example.task.ui.auth.RecoverFragment"
+            android:label="fragment__recover"
+            tools:layout="@layout/fragment_recover" />
+    </navigation>
 </navigation>
