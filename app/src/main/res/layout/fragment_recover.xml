@@ -70,9 +70,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bg_edit_text"
-                android:backgroundTint="@null"
+                app:backgroundTint="@null"
                 android:text="ENVIAR"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
 
             <ProgressBar
                 android:layout_width="wrap_content"
