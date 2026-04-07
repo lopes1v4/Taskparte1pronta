@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="E-mail"
+                android:text="@string/emailText"
                 android:textColor="@color/white" />
 
             <EditText
@@ -59,20 +59,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_edit_text"
-                android:hint="Digite seu E-mail"
-                android:inputType="textEmailAddress"
-                android:padding="10dp" />
+                style="@style/EditTextTheme"
+                android:hint="@string/hint_edit_email"
+                android:inputType="textEmailAddress" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/bntEnviar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/bg_edit_text"
+                style="@style/ButtonTheme"
                 app:backgroundTint="@null"
-                android:text="ENVIAR"
-                android:textColor="@color/black" />
+                android:text="ENVIAR" />
 
             <ProgressBar
                 android:layout_width="wrap_content"

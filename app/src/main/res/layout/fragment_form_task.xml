@@ -41,7 +41,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Descrição"
+                android:text="@string/text_title_form_task_fragment"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -49,11 +49,11 @@
                 android:id="@+id/editTextDescricao"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:background="@drawable/bg_edit_text"
-                android:hint="Informe sua nova tarefa"
+                style="@style/EditTextTheme"
+                android:hint="@string/hint_title_form_task_fragment"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView" />
+                app:layout_constraintTop_toBottomOf="@id/textView"/>
             <TextView
                 android:id="@+id/txtViewStatus"
                 android:layout_width="wrap_content"
@@ -104,10 +104,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/bg_edit_text"
-                android:text="Salvar"
-                android:textAllCaps="false"
-                android:textColor="@color/color_default"
+                style="@style/ButtonTheme"
+                android:text="SALVAR"
                 app:backgroundTint="@null"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="221dp"
